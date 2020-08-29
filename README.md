@@ -1,2 +1,4 @@
-modalWindow - https://sabfes.github.io/Modal/modalWindow/
+main dir - ttps://sabfes.github.io/practice/
+
+modalWindow - https://sabfes.github.io/practice/modalWindow/
 ---
