@@ -1,4 +1,4 @@
-main dir - ttps://sabfes.github.io/practice/
+main dir - https://sabfes.github.io/practice/
 
 modalWindow - https://sabfes.github.io/practice/modalWindow/
 ---
