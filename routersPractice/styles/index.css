@@ -1,0 +1,42 @@
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 60px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.leftMenu {
+    height: calc(100vh - 120px);
+    border-right: 1px solid #f2f2f2;
+}
+
+.footer {
+    min-height: 60px;
+    border-top: 1px solid #f2f2f2;
+}
+
+#carouselExampleIndicators {
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.nav-link {
+    color: black
+}
+.nav-link:hover {
+    color: rgba(8, 3, 3, 0.849);
+}
+.nav-pills  .nav-link.active {
+    background-color: #f2f2f2;
+    color: black
+}
+
+.htmlProfile__p {
+    font-size : 45px;
+    margin-right: 0px;
+    width: 650px;
+    color: black;
+}
