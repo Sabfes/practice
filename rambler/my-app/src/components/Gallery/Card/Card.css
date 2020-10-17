@@ -1,0 +1,126 @@
+.card {
+    width: 300px;
+    min-height: 300px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: rgba(92, 92, 92, 0.596);
+}
+
+.card__img {
+    width: 300px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.card__description {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: 0;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+.card__header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__date {
+    font-size: 11px;
+}
+
+.like-icon {
+    width: 15px;
+    height:15px;
+}
+.like-icon:hover {
+    width: 16px;
+    height: 16px;
+    transition: 1;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 924px) {
+    .card {
+        width: 500px;
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:    "image  header" "image  desc";
+    }
+    .card__img {
+        background-color: red;
+        height: 100%;
+        width: 300px;
+        grid-area: image;
+    }
+    .card__header {
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+       grid-area: header;
+       flex-direction: column;
+    }
+    .card__description {
+        justify-content: flex-end;
+        width: 100%;
+        grid-area: desc;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 340px;
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:    "image" "header" "desc"
+
+    }
+    .card__img {
+        background-color: red;
+        height: 300px;
+        min-width: 340px;
+        grid-area: image;
+    }
+    .card__header {
+       grid-area: header;
+       flex-direction: column;
+    }
+    .card__description {
+        grid-area: desc;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        min-height: 100px;
+        width: 250px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+    }
+    .card__header {
+        display: none;
+    }
+    .card__img {
+        max-width: 250px;
+        min-width: 250px;
+        height: 200px;
+    }
+}
